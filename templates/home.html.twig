@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
+    {{ encore_entry_link_tags('app') }}
+    {{ encore_entry_link_tags('appcarousel') }}
+{%  endblock %}
+{% block body %}
+{#Top of the page#}
+    <div>
+        <h1>Welcome</h1>
+        <h3>MAXIME KAISER</h3>
+        <p>Dev web et mobile junior</p>
+    </div>
+{#body of the page#}
+{% endblock %}
+{% block javascripts %}
+    {{ encore_entry_script_tags('app') }}
+    {{ encore_entry_script_tags('appcarouseljs') }}
+{% endblock %}
