@@ -3,13 +3,252 @@
     {{ encore_entry_link_tags('app') }}
 {%  endblock %}
 {% block body %}
+
 {#Top of the page#}
-    <div>
-        <h1>Welcome</h1>
-        <h3>MAXIME KAISER</h3>
-        <p>Dev web et mobile junior</p>
+    <div class="jumbotron">
+            <h1 class="display-3">Maxime KAISER</h1>
+            <p class="lead" id="subtitle">Developpeur Web</p>
+        <hr class="my-4">
     </div>
 {#body of the page#}
+    <section id="aPropos">
+        <h2>A PROPOS</h2>
+        <div id="aProposContainerContainer">
+            <div class="text-center">
+                <img src="../public/image/apropos.jpg" alt="..." class="rounded-circle">
+            </div>
+            <div class="aProposContainer">
+                <p>Après 10 ans passées dans la Relation
+                    Client et souhaitant donner un nouvel
+                    élan à ma carrière, j'écris une nouvelle
+                    page de ma vie en rejoignant la Wild Code
+                    School pour devenir développeur web. Je
+                    suis maintenant à la recherche
+                    d'opportunités pour intégrer ce nouveau
+                    milieu professionnel.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="EXPERIENCES">
+        <h2 class="EXPERIENCES">EXPERIENCES</h2>
+
+        <div class="timeline">
+            <div class="container left">
+                <div class="content">
+                    <img class="card-img-top" src="../public/image/WCS.png" alt="Card image cap">
+                    <h3>Wild Code School (2020)</h3>
+                    <br>
+                    <h5>Projet Client - ProPicture</h5>
+                        <li>Réalisation d'un projet client pour promouvoir son activité de photographe.</li>
+                        <li>Travail en groupe de 3 sur 8 semaines.</li>
+                        <li>Utilisation PHP / SCSS / Symfony.</li>
+                        <li>Application de la méthode Agile.</li>
+                    <br>
+                    <h5>Projet Fictif - Stras'Help</h5>
+                        <li>Réalisation d'un projet fictif d'échanges de services entre particuliers.</li>
+                        <li>Travail en équipe de 4 sur 5 semaines.</li>
+                        <li>Utilisation PHP / JS / CSS.</li>
+                        <li>Application du modèle MVC.</li>
+                        <li>Utilisation POO et CRUD.</li>
+                        <li>Application de la méthode Agile.</li>
+                    <br>
+                    <h5>Projet annexe - Hackathon</h5>
+                        <li>Réalisation d'un projet "voyager depuis son canapé".</li>
+                        <li>Travail en groupe de 5 sur 24h.</li>
+                        <li>Utilisation d'API (Windy).</li>
+                    <br>
+                    <h5>Projet Fictif - CV</h5>
+                        <li>Réalisation d'un CV dynamique.</li>
+                        <li>Travail en groupe de 3 sur 1 semaine.</li>
+                        <li>Utilisation HTML / CSS / PHP / Bootstrap.</li>
+                        <li>Initiation à l'utilisation de Github.</li>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <img class="card-img-top" src="../public/image/BYTEL.jpg" alt="Card image cap">
+                    <h3>Relation Client - Bouygues Telecom (2009 - 2019)</h3>
+                    <br>
+                    <h5>Coordinateur d'équipe</h5>
+                        <li>Encadrement d'une équipe chargée de la gestion des volumes de
+                        remboursement.</li>
+                        <li>Accompagnement des collaborateurs en déclinant les procédures et en s'assurant
+                        de l'appropriation du geste sur terrain.</li>
+                    <br>
+                    <h5>Accompagnement centre externe au Portugal</h5>
+                        <li>Analyse des besoins d'un centre externe, élaboration d'une feuille de route et
+                        déclinaison du plan d'action.</li>
+                        <li>Mise en place de modules de formation et accompagnement terrain.</li>
+                    <br>
+                    <h5>Conseiller Pôle Satisfaction</h5>
+                        <li>Réponse aux sollicitations internes et externes sur les dossiers complexes.</li>
+                        <li>Gestion des dossiers clients VIP.</li>
+                        <li>Négociation et reconquête client.</li>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section-->
+    <section class="page-section portfolio" id="portfolio">
+        <div class="container">
+            <!-- Portfolio Section Heading-->
+            <h2>Portfolio</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Portfolio Grid Items-->
+            <div class="row">
+                <!-- Portfolio Item 1-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="../public/image/propicture.png" alt="" />
+                    </div>
+                </div>
+                <!-- Portfolio Item 2-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="../public/image/Binouse.jpg" alt="" />
+                    </div>
+                </div>
+                <!-- Portfolio Item 3-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="../public/image/strashelp.jpg" alt="" />
+                    </div>
+                </div>
+                <!-- Portfolio Item 4-->
+                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/game.png" alt="" />
+                    </div>
+                </div>
+                <!-- Portfolio Item 5-->
+                <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/safe.png" alt="" />
+                    </div>
+                </div>
+                <!-- Portfolio Item 6-->
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/submarine.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="interets">
+        <h2 class="title">INTERETS</h2>
+
+        <div class="card-deck">
+            <div class="card">
+                <img class="card-img-top" src="../public/image/dev.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Dev</h5>
+                    <p class="card-text">Découvrir de nouvelles techniques, technologies, s'y familiariser et les réutiliser au service de l'innovation.</p>
+
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="../public/image/music.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Musique</h5>
+                    <p class="card-text">Créer des nouveaux morceaux seul ou en groupe. Je puise dans la musique l'inspiration et la motivation. Le son m'accompagne au quotidien. Si vous voulez découvrir ma part sombre c'est par ici.</p>
+
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="../public/image/foot.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Sport</h5>
+                    <p class="card-text">Amateur de Foot en salle, j'organise de nombreuses rencontres et tournois. Fondateur d'une communautée de joueur comptant plus de 100 membres je serais ravis de vous retrouvez sur les terrains.</p>
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section id="contact">
+        <div class="container-sm">
+
+            <div class="container">
+                <div class="heading">
+                    <h2>CONTACT</h2>
+                </div>
+
+                <div class="row col_sm-12">
+                    <div>
+                        <form id="contact-form" method="post"  role="form">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="firstname">Prénom<span class="blue"></span></label>
+                                    <input type="text" id="firstname" name="firstname" class="form-control" placeholder="Votre prénom"/>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="lastname">Nom<span class="blue"></span></label>
+                                    <input type="text" id="lastname" name="lastname" class="form-control" placeholder="Votre nom" />
+
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="email">Email<span class="blue"></span></label>
+                                    <input type="text" id="email" name="email" class="form-control" placeholder="Votre email" />
+
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="phone">Téléphone</label>
+                                    <input type="text" id="phone" name="phone" class="form-control" placeholder="Votre téléphone" />
+
+                                </div>
+
+                                <div class="col-md-12">
+                                    <label for="content">Message<span class="blue"></span></label>
+                                    <textarea name="content" id="content" class="form-control" placeholder="Votre message" rows="4" cols="50"></textarea>
+
+                                </div>
+
+
+
+                                <div class="col-md-12">
+                                    <button type="submit" class="button1" value="add" name="add">Envoyer</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 {% endblock %}
 {% block javascripts %}
     {{ encore_entry_script_tags('app') }}
