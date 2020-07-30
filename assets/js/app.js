@@ -15,7 +15,7 @@ console.log('Hello Webpack Encore! Edit me in assets/js/app.js');
 
 // fonction pour afficher mon nom
 var i=0;
-var mytext="Cv Developpeur Web";
+var mytext="Developpeur Web & Mobile Junior";
 var mytextelem=document.getElementById("subtitle");
 var mycurrenttext="";
 function myFunction () {

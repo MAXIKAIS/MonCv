@@ -1,5 +1,4 @@
 @import "~bootstrap/scss/bootstrap";
-@import "font-awesome/css/font-awesome.min.css";
 
 // customize some Bootstrap variables
 $primary: darken(#333333, 20%);
@@ -107,9 +106,22 @@ h2 {
   font-size: large;
   padding: 50px;
   color: #fff;
+  max-width: 40rem;
+  margin: auto;
 }
 
 /*EXPERIENCES*/
+
+.mk-h3 {
+  text-align: center;
+}
+
+.mk-xp {
+  display: flex;
+  width: 25%;
+  margin-bottom: 1rem;
+  margin: auto;
+}
 
 * {
   box-sizing: border-box;
@@ -139,6 +151,7 @@ body {
   bottom: 0;
   left: 50%;
   margin-left: -3px;
+  box-shadow: black 10px 10px 10px;
 }
 
 /* Container around content */
@@ -268,6 +281,13 @@ body {
 
 /* INTERETS */
 
+.mk-interet {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  max-width: 70rem;
+}
+
 .card {
   text-align: center;
   background-color: white;
@@ -277,7 +297,7 @@ body {
 }
 
 .card-img-top {
-  width: 15%;
+  width: 35%;
   margin: auto;
   margin-top: 15px;
 }
